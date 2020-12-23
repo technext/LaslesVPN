@@ -1,0 +1,27 @@
+{
+  "bootstrap": {
+    "src": ["dist/js/bootstrap.min.js", "dist/js/bootstrap.min.js.map"],
+    "dest": "bootstrap"
+  },  
+ 
+  "@fortawesome/fontawesome-free": {
+    "src": "js/all.min.js",
+    "dest": "fontawesome"
+  },
+
+  "popper.js": {
+    "src": "dist/umd/popper.min.js",
+    "dest": "popper"
+  },
+
+  "is_js": {
+    "src": "is.min.js",
+    "dest": "is"
+  },
+  
+  "anchor-js": {
+    "src": "anchor.min.js",
+    "dest": "anchorjs"
+  }
+  
+}
