@@ -1,17 +1,27 @@
 mixin HeroSection
-  section.py-0#home
-    +Background({ image: `${CWD}assets/img/illustrations/1.png`, attrs: { style: { 'background-position': 'right top', 'background-size': 'contain'} }, className: 'd-none d-lg-block' })
-    +Background({image: `${CWD}assets/img/illustrations/1-1.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'cover'} }, className: ' d-lg-none' })
-    .container
-      .row.align-items-center.min-vh-100
-        .col-md-7.col-lg-6.py-6.text-md-left.text-center
-          h1 Introduce Your Product
-            br
-            |  Quickly &amp; Effectively
-          p.lead.text-muted Understand your target audience. This is critical because the language, channels and information you use to communicate with and appeal to one demographic may not be as effective with another.
-          p.lead.text-muted Understand the target audience and how to reach them effectively, both with the ad and mentally.
-          .pt-4
-            a.btn.btn-primary.mr-3(href='#')
-              | Purchase UI Kit 
-            a.btn.btn-outline-primary(href='#')
-              | Learn More
+  +Section
+    .row.align-items-center
+      .col-lg-6.col-md-5.order-md-1
+        img.img-fluid(src=`${CWD}assets/img/illustrations/1.png`  alt='')  
+      .col-md-7.col-lg-6.mt-5
+        h1 Want anything to be
+          br
+          |easy with LaslesVPN.
+          p.lead.text-muted.pt-3 Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
+          a.btn.btn-primary.rounded.shadow-lg(href='#')
+            | Get Started 
+  //- section.py-0#home
+  //-   +Background({ image: `${CWD}assets/img/illustrations/1.png`, attrs: { style: { 'background-position': 'right', 'background-size': 'contain'} }, className: '' })
+  //-   .container
+  //-     .row.align-items-center.min-vh-100
+  //-       .col-md-7.col-lg-6.py-6.text-md-left.text-center
+  //-         h1 Introduce Your Product
+  //-           br
+  //-           |  Quickly &amp; Effectively
+  //-         p.lead.text-muted Understand your target audience. This is critical because the language, channels and information you use to communicate with and appeal to one demographic may not be as effective with another.
+  //-         p.lead.text-muted Understand the target audience and how to reach them effectively, both with the ad and mentally.
+  //-         .pt-4
+  //-           a.btn.btn-primary.mr-3(href='#')
+  //-             | Purchase UI Kit 
+  //-           a.btn.btn-outline-primary(href='#')
+  //-             | Learn More

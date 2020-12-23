@@ -1,16 +1,26 @@
 mixin NavbarLandie
   nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-2.px-0(data-navbar-on-scroll)
     .container
-      a.navbar-brand.fw-bold.order-1(href=`${CWD}index.html`)  Landie
-      button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      a.navbar-brand(href='#')
+        img.d-inline-block(src=`${CWD}assets/img/icons/logo.png` alt='' width='30' )
+        span.d-inline-block.text-900.fs-1.ms-2.fw-medium Lasles
+          span.fw-bold VPN
+      button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      #navbarNav.collapse.navbar-collapse.w-lg-auto.order-3.order-lg-0.border-top.border-lg-top-0.border-200.mt-3
-        ul.navbar-nav
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mx-auto.mb-lg-0.border-top.border-bottom.border-lg-top-0.border-lg-bottom-0.my-3
           li.nav-item
-            a.nav-link.text-500.px-2.ml-lg-n2(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home
+            a.nav-link.active(aria-current='page', href='#' class= currentPage === 'index' ? 'active' : false ) About
           li.nav-item
-            a.nav-link.text-500.px-2(href='#about') About
+            a.nav-link(href='#') Features
           li.nav-item
-            a.nav-link.text-500.px-2(href='#pricing') Pricing
-      a.btn.btn-primary.px-3.px-md-5.order-2(href='#!' ) Buy now
-    
+            a.nav-link(href='#') Pricing 
+          li.nav-item
+            a.nav-link(href='#') Testimonials
+          li.nav-item
+            a.nav-link(href='#') Help  
+        form.d-flex
+          button.btn.btn-link.text-900.order-1.order-lg-0(type='button') Sign in
+          button.btn.btn-outline-primary.rounded-pill.px-4.order-0(type='submit') Sign Up
+
+
