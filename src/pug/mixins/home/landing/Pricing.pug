@@ -1,11 +1,31 @@
 mixin Pricing
-  +Section.bg-100.pt-0.pb-5.pb-md-7.pb-xl-9#pricing
+  +Section.bg-100
     .row.justify-content-center
       .col-md-8.col-lg-6.text-center
-        h1 A Price To Suit Everyone
-        p.lead.text-muted We offer two usage options for customers, the Personal license or the Flexible license. You’ll know which option is right for you based on the size of your business and the number of users that will need to have access to the software.
-        h1.mb-0 $40
-        p Ui Design Kit
-        a.btn.btn-primary.px-5(href='#')
-          | Purchase Now
-
+        h1 Choose Your Plan
+        p.lead Let's choose the package that is best for you and explore it happily and cheerfully.
+    .row 
+      .col-lg-4.pt-5
+        .card.mb-5.mb-lg-0.rounded-3
+          .card-body
+            .card-title
+              .text-center.pt-6
+                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+                h5.my-4 Free Plan
+                
+      .col-lg-4.pt-5
+        .card.mb-5.mb-lg-0.rounded-3
+          .card-body
+            .card-title
+              .text-center.pt-6
+                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+                h5.my-4 Standard Plan
+                
+      .col-lg-4.pt-5
+        .card.mb-5.mb-lg-0.rounded-3
+          .card-body
+            .card-title
+              .text-center.pt-6
+                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+                h5.my-4 Premium Plan
+                
