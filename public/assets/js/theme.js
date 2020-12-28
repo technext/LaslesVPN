@@ -280,9 +280,10 @@ var navbarInit = function navbarInit() {
     var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
 
     var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    var colorName = Object.keys(allColors).includes(name) ? name : 'light';
+    var colorName = Object.keys(allColors).includes(name) ? name : 'white';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
+    var shadowName = 'shadow';
     var colorRgb = utils.hexToRgb(color);
 
     var _window$getComputedSt = window.getComputedStyle(navbar),
@@ -297,17 +298,19 @@ var navbarInit = function navbarInit() {
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
       navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
+      navbar.classList.add(shadowName);
     }); // Toggle bg class on window resize
 
     utils.resize(function () {
       var breakPoint = utils.getBreakpoint(navbar);
 
       if (window.innerWidth > breakPoint) {
-        navbar.classList.remove(bgClassName);
+        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
         navbar.style.transition = 'none';
       } else if (!utils.hasClass(navbar.querySelector(Selector.NAVBAR_TOGGLER), ClassNames.COLLAPSED)) {
         navbar.classList.add(bgClassName);
+        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = backgroundImage;
       }
 
@@ -317,11 +320,13 @@ var navbarInit = function navbarInit() {
     });
     navbarCollapse.addEventListener(Events.SHOW_BS_COLLAPSE, function () {
       navbar.classList.add(bgClassName);
+      navbar.classList.add(shadowName);
       navbar.style.backgroundImage = backgroundImage;
       navbar.style.transition = transition;
     });
     navbarCollapse.addEventListener(Events.HIDE_BS_COLLAPSE, function () {
       navbar.classList.remove(bgClassName);
+      navbar.classList.remove(shadowName);
       !html.scrollTop && (navbar.style.backgroundImage = 'none');
     });
     navbarCollapse.addEventListener(Events.HIDDEN_BS_COLLAPSE, function () {

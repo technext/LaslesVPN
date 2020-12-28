@@ -35,9 +35,10 @@ const navbarInit = () =>{
     const allColors = { ...utils.colors, ...utils.grays };
 
     const name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    const colorName = Object.keys(allColors).includes(name) ? name : 'light';
+    const colorName = Object.keys(allColors).includes(name) ? name : 'white';
     const color = allColors[colorName];
     const bgClassName = `bg-${colorName}`;
+    const shadowName = 'shadow';
     const colorRgb = utils.hexToRgb(color);
     const { backgroundImage } = window.getComputedStyle(navbar);
     const transition = 'background-color 0.35s ease';
@@ -52,13 +53,14 @@ const navbarInit = () =>{
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
       navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'none';
+      navbar.classList.add(shadowName);
     });
 
      // Toggle bg class on window resize
     utils.resize(() => {
       const breakPoint = utils.getBreakpoint(navbar);
       if (window.innerWidth > breakPoint) {
-        navbar.classList.remove(bgClassName);
+        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
         navbar.style.transition = 'none';
       } 
@@ -72,6 +74,7 @@ const navbarInit = () =>{
 
       { 
         navbar.classList.add(bgClassName);
+        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = backgroundImage;
       }
      
@@ -83,12 +86,14 @@ const navbarInit = () =>{
 
     navbarCollapse.addEventListener(Events.SHOW_BS_COLLAPSE, () => {
       navbar.classList.add(bgClassName);
+      navbar.classList.add(shadowName);
       navbar.style.backgroundImage = backgroundImage;
       navbar.style.transition = transition;
     });
 
     navbarCollapse.addEventListener(Events.HIDE_BS_COLLAPSE, () => {
       navbar.classList.remove(bgClassName);
+      navbar.classList.remove(shadowName);
       !html.scrollTop && (navbar.style.backgroundImage = 'none');
     });
 

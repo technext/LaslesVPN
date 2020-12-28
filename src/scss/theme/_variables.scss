@@ -47,8 +47,8 @@ $gray-500: #9da9bb !default;
 $gray-600: #748194 !default;
 $gray-700: #5e6e82 !default;
 $gray-800: #4d5969 !default;
-$gray-900: #0B132A !default;
-$gray-1000: #F53838 !default;
+$gray-900: #4F5665 !default;
+$gray-1000: #0B132A !default;
 $gray-1100: #0b1727 !default;
 $black: #000 !default;
 
@@ -75,22 +75,22 @@ $grays: map-merge(
 //*-----------------------------------------------
 //|   Solid Colors
 //-----------------------------------------------*/
-$blue: #2c7be5 !default;
+$blue: #387BF5 !default;
 $indigo: #727cf5 !default;
 $purple: #6b5eae !default;
-$pink: #ff679b !default;
-$red: #e63757 !default;
-$orange: #fd7e14 !default;
-$yellow: #f5803e !default;
-$green: #00d27a !default;
-$teal: #02a8b5 !default;
-$cyan: #27bcfd !default;
+$pink: #F5387B !default;
+$red: #F53838 !default;
+$orange: #F56538 !default;
+$yellow: #F29800 !default;
+$green: #38F5B1 !default;
+$teal: #28AFAF !default;
+$cyan: #38B0F5 !default;
 $light: #f9fafd !default;
 
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
-$primary: $gray-1000 !default;
+$primary: $blue !default;
 $secondary: $teal !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -279,7 +279,7 @@ $h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
 $headings-font-weight: $font-weight-medium !default;
-$headings-color: $gray-900 !default;
+$headings-color: $gray-1000 !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: () !default;
@@ -319,7 +319,7 @@ $input-btn-padding-x: 1rem !default;
 $input-btn-padding-y-sm: 0.1875rem !default;
 $input-btn-padding-x-sm: 0.75rem !default;
 
-$input-btn-padding-y-lg: 1.5rem !default;
+$input-btn-padding-y-lg: 1rem !default;
 $input-btn-padding-x-lg: 5.344rem !default;
 $input-btn-font-size-lg:  $font-size-base !default;
 
@@ -333,7 +333,7 @@ $btn-font-weight: $font-weight-medium !default;
 $btn-focus-width: 0 !default;
 
 $btn-border-radius: 2px !default;
-$btn-border-radius-lg: 2px !default;
+$btn-border-radius-lg: 10px !default;
 
 //*-----------------------------------------------
 //|   Navigation
@@ -342,7 +342,7 @@ $navbar-font-size: $font-size-base * 0.8 !default;
 
 $navbar-light-color: rgba($black, 0.55) !default;
 $navbar-light-hover-color: rgba($black, 0.9) !default;
-$navbar-light-active-color: $primary !default;
+$navbar-light-active-color: $danger !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
 $navbar-dark-color: rgba($white, .7) !default;
