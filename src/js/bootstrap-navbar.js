@@ -49,20 +49,22 @@ const navbarInit = () =>{
      // Change navbar background color on scroll
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
-      let alpha = (scrollTop / windowHeight) * 2;
+      let alpha = (scrollTop / windowHeight) * 3;
+      console.log(alpha);
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
       navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'none';
-      navbar.classList.add(shadowName);
+      // let shadow = (alpha > 1 || navbar.classList.add(shadowName)) ? backgroundImage :'none';
+      // console.log(shadow);
     });
 
      // Toggle bg class on window resize
     utils.resize(() => {
       const breakPoint = utils.getBreakpoint(navbar);
       if (window.innerWidth > breakPoint) {
-        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
         navbar.style.transition = 'none';
+        // navbar.classList.add(shadowName);
       } 
       else if (
         !utils.hasClass(

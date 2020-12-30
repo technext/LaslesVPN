@@ -1,31 +1,146 @@
 mixin Pricing
-  +Section.bg-100
+  +Section.bg-100.py-7
     .row.justify-content-center
       .col-md-8.col-lg-6.text-center
-        h1 Choose Your Plan
-        p.lead Let's choose the package that is best for you and explore it happily and cheerfully.
+        h2 Choose Your Plan
+        p Let's choose the package that is best for you and explore it happily and cheerfully.
     .row 
       .col-lg-4.pt-5
-        .card.mb-5.mb-lg-0.rounded-3
-          .card-body
-            .card-title
-              .text-center.pt-6
-                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-                h5.my-4 Free Plan
-                
+        .card
+          .card-body.mx-auto
+            .text-center.pt-6
+              img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+              h5.my-5 Free Plan
+            ul.list-unstyled(style = "height: 230px")
+              //- Check
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Unlimited Bandwitch 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Encrypted Connection 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Yes Traffic Logs
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Works on All Devices 
+        
+            .text-center.my-5
+              h2 Free
+              button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
+
+
       .col-lg-4.pt-5
-        .card.mb-5.mb-lg-0.rounded-3
-          .card-body
-            .card-title
-              .text-center.pt-6
-                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-                h5.my-4 Standard Plan
-                
+        .card
+          .card-body.mx-auto
+            .text-center.pt-6
+              img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+              h5.my-5 Standard Plan
+            ul.list-unstyled(style = "height: 230px")
+              //- Check
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Unlimited Bandwitch 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Encrypted Connection 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Yes Traffic Logs
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Works on All Devices
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Connect Anyware  
+              
+
+            .text-center.my-5
+              h2 $9 
+                span.text-900 / mo
+              button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
+
+
       .col-lg-4.pt-5
-        .card.mb-5.mb-lg-0.rounded-3
-          .card-body
-            .card-title
-              .text-center.pt-6
-                img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-                h5.my-4 Premium Plan
-                
+        .card
+          .card-body.mx-auto
+            .text-center.pt-6
+              img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
+              h5.my-5 Premium Plan
+            ul.list-unstyled(style = "height: 230px")
+              //- Check
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Unlimited Bandwitch 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Encrypted Connection 
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Yes Traffic Logs
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Works on All Devices
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Works on All Devices  
+              
+              li.mb-3
+                span.me-2
+                  svg.bi.bi-check(xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#2FAB73' viewBox='0 0 16 16')
+                    path(d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z')
+                | Get New Features   
+              
+            .text-center.my-5
+              h2 $12 
+                span.text-900 / mo
+              button.btn.btn-lg.btn-danger.hover-top.btn-glow.rounded-pill.px-5.py-2(type='submit') Select
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      

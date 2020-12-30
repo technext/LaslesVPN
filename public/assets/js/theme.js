@@ -294,20 +294,20 @@ var navbarInit = function navbarInit() {
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 2;
+      var alpha = scrollTop / windowHeight * 3;
+      console.log(alpha);
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
-      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
-      navbar.classList.add(shadowName);
+      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none'; // let shadow = (alpha > 1 || navbar.classList.add(shadowName)) ? backgroundImage :'none';
+      // console.log(shadow);
     }); // Toggle bg class on window resize
 
     utils.resize(function () {
       var breakPoint = utils.getBreakpoint(navbar);
 
       if (window.innerWidth > breakPoint) {
-        navbar.classList.add(shadowName);
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
-        navbar.style.transition = 'none';
+        navbar.style.transition = 'none'; // navbar.classList.add(shadowName);
       } else if (!utils.hasClass(navbar.querySelector(Selector.NAVBAR_TOGGLER), ClassNames.COLLAPSED)) {
         navbar.classList.add(bgClassName);
         navbar.classList.add(shadowName);

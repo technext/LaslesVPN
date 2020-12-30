@@ -178,6 +178,7 @@ $enable-negative-margins: true !default;
 //-----------------------------------------------*/
 
 $box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07) !default;
+$box-shadow-sm: 0 25px 45px rgba($gray-900, .075) !default;
 $box-shadow-lg: 0 1rem 4rem rgba($black, 0.175) !default;
 
 //*-----------------------------------------------
@@ -323,7 +324,6 @@ $input-btn-padding-y-lg: 1rem !default;
 $input-btn-padding-x-lg: 5.344rem !default;
 $input-btn-font-size-lg:  $font-size-base !default;
 
-$border-width:                1px !default;
 
 
 $btn-reveal-hover-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
@@ -411,8 +411,8 @@ $sizes: map-merge(
 $hr-color: $border-color !default;
 $hr-opacity: 1 !default;
 
-
 //*-----------------------------------------------
-//|   Utilities
+//|   card
 //-----------------------------------------------*/
-$border-width: 1px !default;
+$card-border-width:                 2px !default;
+$card-border-radius:                0.625rem !default;

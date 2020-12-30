@@ -607,8 +607,8 @@ progress {
   background-color: #fff;
   border: 1px solid #d8e2ef;
   border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
+  box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
   max-width: 100%;
   height: auto;
 }
@@ -5169,8 +5169,8 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.625rem;
 }
 
 .card > hr {
@@ -5185,14 +5185,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.625rem - 2px);
+  border-top-right-radius: calc(0.625rem - 2px);
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.625rem - 2px);
+  border-bottom-left-radius: calc(0.625rem - 2px);
 }
 
 .card > .card-header + .list-group,
@@ -5232,21 +5232,21 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(0.625rem - 2px) calc(0.625rem - 2px) 0 0;
 }
 
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(0.625rem - 2px) calc(0.625rem - 2px);
 }
 
 .card-header-tabs {
@@ -5268,7 +5268,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(0.625rem - 2px);
 }
 
 .card-img,
@@ -5279,14 +5279,14 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.625rem - 2px);
+  border-top-right-radius: calc(0.625rem - 2px);
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.625rem - 2px);
+  border-bottom-left-radius: calc(0.625rem - 2px);
 }
 
 .card-group > .card {
@@ -6252,8 +6252,8 @@ fieldset:disabled .btn {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.375rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
+  box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
   outline: 0;
 }
 
@@ -7431,8 +7431,8 @@ fieldset:disabled .btn {
 }
 
 .shadow-sm {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075) !important;
+  box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075) !important;
 }
 
 .shadow-lg {
@@ -17419,8 +17419,8 @@ label {
   width: 2.5rem;
   border: 0;
   font-size: 0.875rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
+  box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
 }
 
 .icon-item:hover, .icon-item:focus {
@@ -17656,8 +17656,8 @@ label {
 }
 
 .badge-circle {
-  height: 3.4rem;
-  width: 3.4rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17665,7 +17665,22 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0rem 1rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .badge-circle {
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
 }
 
 /*-----------------------------------------------
