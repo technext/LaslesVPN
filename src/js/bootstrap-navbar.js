@@ -35,7 +35,7 @@ const navbarInit = () =>{
     const allColors = { ...utils.colors, ...utils.grays };
 
     const name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    const colorName = Object.keys(allColors).includes(name) ? name : 'white';
+    const colorName = Object.keys(allColors).includes(name) ? name : 'light';
     const color = allColors[colorName];
     const bgClassName = `bg-${colorName}`;
     const shadowName = 'shadow';
@@ -49,13 +49,11 @@ const navbarInit = () =>{
      // Change navbar background color on scroll
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
-      let alpha = (scrollTop / windowHeight) * 3;
-      console.log(alpha);
+      let alpha = (scrollTop / windowHeight) * 2;
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
       navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'none';
-      // let shadow = (alpha > 1 || navbar.classList.add(shadowName)) ? backgroundImage :'none';
-      // console.log(shadow);
+      (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? navbar.classList.add(shadowName):navbar.classList.remove(shadowName);
     });
 
      // Toggle bg class on window resize

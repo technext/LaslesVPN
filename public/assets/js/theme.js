@@ -280,7 +280,7 @@ var navbarInit = function navbarInit() {
     var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
 
     var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    var colorName = Object.keys(allColors).includes(name) ? name : 'white';
+    var colorName = Object.keys(allColors).includes(name) ? name : 'light';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
     var shadowName = 'shadow';
@@ -294,12 +294,11 @@ var navbarInit = function navbarInit() {
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 3;
-      console.log(alpha);
+      var alpha = scrollTop / windowHeight * 2;
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
-      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none'; // let shadow = (alpha > 1 || navbar.classList.add(shadowName)) ? backgroundImage :'none';
-      // console.log(shadow);
+      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
+      alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? navbar.classList.add(shadowName) : navbar.classList.remove(shadowName);
     }); // Toggle bg class on window resize
 
     utils.resize(function () {

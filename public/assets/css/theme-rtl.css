@@ -9810,35 +9810,35 @@ fieldset:disabled .btn {
 }
 
 .bg-soft-primary {
-  background-color: #4e8af6 !important;
+  background-color: #ebf2fe !important;
 }
 
 .bg-soft-secondary {
-  background-color: #40b8b8 !important;
+  background-color: #eaf7f7 !important;
 }
 
 .bg-soft-success {
-  background-color: #4ef6ba !important;
+  background-color: #ebfef7 !important;
 }
 
 .bg-soft-info {
-  background-color: #4eb9f6 !important;
+  background-color: #ebf7fe !important;
 }
 
 .bg-soft-warning {
-  background-color: #f3a31c !important;
+  background-color: #fef5e6 !important;
 }
 
 .bg-soft-danger {
-  background-color: #f64e4e !important;
+  background-color: #feebeb !important;
 }
 
 .bg-soft-light {
-  background-color: #fafbfd !important;
+  background-color: #feffff !important;
 }
 
 .bg-soft-dark {
-  background-color: #26313f !important;
+  background-color: #e7e8e9 !important;
 }
 
 @media (min-width: 576px) {

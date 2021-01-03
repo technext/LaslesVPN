@@ -118,14 +118,14 @@ $theme-color-interval: 8% !default;
 $theme-colors-soft: () !default;
 $theme-colors-soft: map-merge(
   (
-    'primary': tint-color($primary, 11),
-    'secondary': tint-color($secondary, 11),
-    'success': tint-color($success, 11),
-    'info': tint-color($info, 11),
-    'warning': tint-color($warning, 11),
-    'danger': tint-color($danger, 11),
-    'light': tint-color($light, 11),
-    'dark': tint-color($dark, 11),
+    'primary': tint-color($primary, 90),
+    'secondary': tint-color($secondary, 90),
+    'success': tint-color($success, 90),
+    'info': tint-color($info, 90),
+    'warning': tint-color($warning, 90),
+    'danger': tint-color($danger, 90),
+    'light': tint-color($light, 90),
+    'dark': tint-color($dark, 90),
   ),
   $theme-colors-soft
 );
