@@ -280,21 +280,23 @@ var navbarInit = function navbarInit() {
     var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
 
     var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    var colorName = Object.keys(allColors).includes(name) ? name : 'light';
+    var colorName = Object.keys(allColors).includes(name) ? name : 'white';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
-    var shadowName = 'shadow';
+    var shadowName = 'shadow-transition'; // const shadowName = 'shadow';
+
     var colorRgb = utils.hexToRgb(color);
 
     var _window$getComputedSt = window.getComputedStyle(navbar),
         backgroundImage = _window$getComputedSt.backgroundImage;
 
-    var transition = 'background-color 0.35s ease';
+    var transition = 'background-color 0.35s ease'; // console.log(transition);
+
     navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 2;
+      var alpha = scrollTop / windowHeight * 5;
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
       navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
