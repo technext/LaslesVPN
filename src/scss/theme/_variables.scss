@@ -39,13 +39,13 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$gray-100: #f9fafd !default;
-$gray-200: #edf2f9 !default;
-$gray-300: #d8e2ef !default;
-$gray-400: #DDE0E4 !default;
-$gray-500: #9da9bb !default;
-$gray-600: #748194 !default;
-$gray-700: #5e6e82 !default;
+$gray-100:#F6F6F6  !default;
+$gray-200: #F8F8F8 !default;
+$gray-300: #bec3d0 !default;
+$gray-400: #7a839e !default;
+$gray-500: #6f7995 !default;
+$gray-600: #4d5469 !default;
+$gray-700: #4d5769 !default;
 $gray-800: #4d5969 !default;
 $gray-900: #4F5665 !default;
 $gray-1000: #0B132A !default;
@@ -222,7 +222,7 @@ $link-hover-decoration: underline !default;
 //|   Components
 //-----------------------------------------------*/
 $border-radius: 0.25rem !default;
-$border-radius-lg: 0.375rem !default;
+$border-radius-lg: 0.625rem !default;
 
 //*-----------------------------------------------
 //|   Fonts Families
@@ -425,14 +425,18 @@ $card-border-radius:                0.625rem !default;
 // $carousel-control-color: $danger !default;
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color:             $white !default;
-$carousel-control-width:             15% !default;
-// $carousel-control-icon-width: 40px !default;
-// $carousel-control-bg-color: $white !important;
+$carousel-control-color:             $danger !default;
 
 // $carousel-dark-indicator-active-bg:  $danger !default;
+$carousel-indicator-active-bg:       $danger !default;
 // $carousel-dark-caption-color:        $black !default;
-$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default;
+// $carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default;
 $carousel-indicator-width:           12px !default;
 $carousel-indicator-height:          12px !default;
-$carousel-control-icon-width:        1.5rem !default;
+$carousel-indicator-hit-area-height : 0 !default;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left-circle' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right-circle' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") !default;
+// $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") !default;
+
+// 

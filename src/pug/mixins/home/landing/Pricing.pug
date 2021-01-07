@@ -1,17 +1,17 @@
 mixin Pricing
   +Section.bg-100.py-7
     .row.justify-content-center
-      .col-md-8.col-lg-6.text-center
+      .col-md-8.col-lg-5.text-center
         h2 Choose Your Plan
         p Let's choose the package that is best for you and explore it happily and cheerfully.
-    .row 
-      .col-lg-4.pt-5
+    .row.justify-content-center
+      .col-md-8.col-lg-4.pt-5
         .card
           .card-body.mx-auto
-            .text-center.pt-6
+            .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-              h5.my-5 Free Plan
-            ul.list-unstyled(style = "height: 14.375rem")
+              h5.my-4 Free Plan
+            ul.list-unstyled(style = "min-height: 13.375rem")
               //- Check
               li.mb-3
                 span.me-2
@@ -35,17 +35,17 @@ mixin Pricing
                 | Works on All Devices 
         
             .text-center.my-5
-              h2 Free
+              h2.mb-3 Free
               button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
 
 
-      .col-lg-4.pt-5
+      .col-md-8.col-lg-4.pt-5
         .card
           .card-body.mx-auto
-            .text-center.pt-6
+            .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-              h5.my-5 Standard Plan
-            ul.list-unstyled(style = "height: 14.375rem")
+              h5.my-4 Standard Plan
+            ul.list-unstyled(style = "min-height: 13.375rem")
               //- Check
               li.mb-3
                 span.me-2
@@ -75,18 +75,18 @@ mixin Pricing
               
 
             .text-center.my-5
-              h2 $9 
+              h2.mb-3 $9 
                 span.text-900 / mo
               button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
 
 
-      .col-lg-4.pt-5
+      .col-md-8.col-lg-4.pt-5
         .card
           .card-body.mx-auto
-            .text-center.pt-6
+            .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
-              h5.my-5 Premium Plan
-            ul.list-unstyled(style = "height: 14.375rem")
+              h5.my-4 Premium Plan
+            ul.list-unstyled(style = "height: 13.375rem")
               //- Check
               li.mb-3
                 span.me-2
@@ -121,9 +121,9 @@ mixin Pricing
                 | Get New Features   
               
             .text-center.my-5
-              h2 $12 
+              h2.mb-3 $12 
                 span.text-900 / mo
-              button.btn.btn-lg.btn-danger.hover-top.btn-glow.rounded-pill.px-5.py-2(type='submit') Select
+              button.btn.btn-lg.btn-danger.hover-top.btn-glow.rounded-pill.border-0.px-5.py-2(type='submit') Select
               
 
 
