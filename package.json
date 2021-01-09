@@ -9,6 +9,7 @@
     "build:test": "cross-env MODE=PROD gulp build:test",
     "live": "gulp compile:all && cross-env MODE=PROD gulp live",
     "publish": "git subtree push --prefix live origin gh-pages",
+    "publish:force": "git push origin `git subtree split --prefix live main`:gh-pages --force",
     "localhost": "ssh -R 80:localhost:3000 ssh.localhost.run",
     "deploy": "gh-pages -d live",
     "deploy:debug": "NODE_DEBUG=gh-pages npm run deploy"
