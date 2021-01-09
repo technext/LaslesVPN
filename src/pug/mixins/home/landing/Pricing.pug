@@ -1,17 +1,17 @@
 mixin Pricing
-  +Section.bg-100.py-7
+  +Section('container-lg').bg-100.py-7
     .row.justify-content-center
       .col-md-8.col-lg-5.text-center
         h2 Choose Your Plan
         p Let's choose the package that is best for you and explore it happily and cheerfully.
-    .row.justify-content-center
-      .col-md-8.col-lg-4.pt-5
-        .card
-          .card-body.mx-auto
+    .row.h-100.justify-content-center
+      .col-md-4.col-lg-4.pt-4.px-md-2
+        .card.h-100
+          .card-body.d-flex.flex-column.justify-content-evenly.mx-auto
             .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
               h5.my-4 Free Plan
-            ul.list-unstyled(style = "min-height: 13.375rem")
+            ul.list-unstyled
               //- Check
               li.mb-3
                 span.me-2
@@ -39,13 +39,13 @@ mixin Pricing
               button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
 
 
-      .col-md-8.col-lg-4.pt-5
-        .card
-          .card-body.mx-auto
+      .col-md-4.col-lg-4.pt-4.px-md-2
+        .card.h-100
+          .card-body.d-flex.flex-column.justify-content-evenly.mx-auto
             .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
               h5.my-4 Standard Plan
-            ul.list-unstyled(style = "min-height: 13.375rem")
+            ul.list-unstyled
               //- Check
               li.mb-3
                 span.me-2
@@ -80,9 +80,9 @@ mixin Pricing
               button.btn.btn-outline-danger.rounded-pill.px-5.py-2(type='submit') Select
 
 
-      .col-md-8.col-lg-4.pt-5
-        .card
-          .card-body.mx-auto
+      .col-md-4.col-lg-4.pt-4.px-md-2
+        .card.h-100
+          .card-body.d-flex.flex-column.justify-content-evenly.mx-auto
             .text-center.pt-5
               img(src=`${CWD}assets/img/icons/free.png` alt='' ).img-fluid 
               h5.my-4 Premium Plan
