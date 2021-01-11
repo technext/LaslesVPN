@@ -2542,7 +2542,7 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.3125rem 1rem;
+  padding: 0.3125rem 2rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2623,10 +2623,10 @@ progress {
 }
 
 .form-control::file-selector-button {
-  padding: 0.3125rem 1rem;
-  margin: -0.3125rem -1rem;
-  -webkit-margin-end: 1rem;
-  margin-inline-end: 1rem;
+  padding: 0.3125rem 2rem;
+  margin: -0.3125rem -2rem;
+  -webkit-margin-end: 2rem;
+  margin-inline-end: 2rem;
   color: #4d5769;
   background-color: #F8F8F8;
   pointer-events: none;
@@ -2655,10 +2655,10 @@ progress {
 }
 
 .form-control::-webkit-file-upload-button {
-  padding: 0.3125rem 1rem;
-  margin: -0.3125rem -1rem;
-  -webkit-margin-end: 1rem;
-  margin-inline-end: 1rem;
+  padding: 0.3125rem 2rem;
+  margin: -0.3125rem -2rem;
+  -webkit-margin-end: 2rem;
+  margin-inline-end: 2rem;
   color: #4d5769;
   background-color: #F8F8F8;
   pointer-events: none;
@@ -2778,7 +2778,7 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.3125rem 1rem 0.3125rem 2rem;
+  padding: 0.3125rem 2rem 0.3125rem 3rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2787,7 +2787,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234d5969' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: left 1rem center;
+  background-position: left 2rem center;
   background-size: 16px 12px;
   border: 1px solid #7a839e;
   border-radius: 0.25rem;
@@ -2806,7 +2806,7 @@ textarea.form-control-lg {
 }
 
 .form-select[multiple], .form-select[size]:not([size="1"]) {
-  padding-left: 1rem;
+  padding-left: 2rem;
   background-image: none;
 }
 
@@ -3086,7 +3086,7 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-select {
   height: calc(3.5rem + 2px);
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
 }
 
 .form-floating > label {
@@ -3094,7 +3094,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   height: 100%;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   pointer-events: none;
   border: 1px solid transparent;
   -webkit-transform-origin: 100% 0;
@@ -3230,7 +3230,7 @@ textarea.form-control-lg {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0.3125rem 1rem;
+  padding: 0.3125rem 2rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3262,7 +3262,7 @@ textarea.form-control-lg {
 
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
@@ -3334,9 +3334,9 @@ textarea.form-control-lg {
 
 .was-validated .form-select:valid, .form-select.is-valid {
   border-color: #38F5B1;
-  padding-left: calc(0.75em + 2.46875rem);
+  padding-left: calc(0.75em + 3.46875rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234d5969' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2338F5B1' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-position: left 1rem center, center left 2rem;
+  background-position: left 2rem center, center left 3rem;
   background-size: 16px 12px, calc(0.75em + 0.3125rem) calc(0.75em + 0.3125rem);
 }
 
@@ -3418,9 +3418,9 @@ textarea.form-control-lg {
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
   border-color: #F53838;
-  padding-left: calc(0.75em + 2.46875rem);
+  padding-left: calc(0.75em + 3.46875rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234d5969' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23F53838'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23F53838' stroke='none'/%3e%3c/svg%3e");
-  background-position: left 1rem center, center left 2rem;
+  background-position: left 2rem center, center left 3rem;
   background-size: 16px 12px, calc(0.75em + 0.3125rem) calc(0.75em + 0.3125rem);
 }
 
@@ -3465,7 +3465,7 @@ textarea.form-control-lg {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.3125rem 1rem;
+  padding: 0.3125rem 2rem;
   font-size: 1rem;
   border-radius: 2px;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4572,8 +4572,8 @@ fieldset:disabled .btn {
 }
 
 .dropdown-toggle-split {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .dropdown-toggle-split::after,
