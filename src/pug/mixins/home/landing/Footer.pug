@@ -1,3 +1,8 @@
+mixin FooterList(...items)
+  each item in items
+    li.lh-lg
+      a.text-900.text-decoration-none(href='#!')
+        =item
 mixin Footer
   +Section.bg-200.pt-9.pb-0
     .row
@@ -29,56 +34,17 @@ mixin Footer
       .col-6.col-sm-4.col-lg-3.mb-3
         h5.footer-title product  
         ul.list-unstyled.mb-md-4.mb-lg-0
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Download
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Pricing
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Locations
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Server
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Countries
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Blog
-
+          +FooterList('Download','Pricing','Locations','Server','Countries','Blog')
+          
       .col-6.col-sm-4.col-lg-3.mb-3
         h5.footer-title Engage
         ul.list-unstyled.mb-md-4.mb-lg-0
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | LaslesVPN ?
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | FAQ
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Tutorials
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | About Us
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Privacy Policy 
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Terms of Service
-
+          +FooterList('LaslesVPN ?','FAQ','Tutorials','About Us','Privacy Policy ','Terms of Service')
+          
       .col-12.col-sm-4.col-lg-2.mb-3.ps-xxl-7.ps-xl-5
         h5.footer-title Earn Money  
         ul.list-unstyled.mb-md-4.mb-lg-0
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Affiliate
-          li.lh-lg
-            a.text-900.text-decoration-none(href='#!')
-              | Become Partner
+          +FooterList('Affiliate','Become Partner')
       hr.opacity-25      
      
       .text-400.text-center
