@@ -3,11 +3,10 @@ mixin Items(config)
     .card.h-100
       .card-body
         .d-flex.justify-content-between
-          div
-            img(src=`${CWD}assets/img/gallery/${config.image}` alt='').img-fluid
-            p.card-text.fs--1.mb-0.d-inline-block.text-1000.ms-3.ms-md-0.ms-lg-3.fw-medium(style="transform:translateY(10px)")=config.name
-                br
-                span.fs--2.fw-normal=config.country
+          img(src=`${CWD}assets/img/gallery/${config.image}` alt='').img-fluid
+          p.card-text.fs--1.mb-0.d-inline-block.text-1000.ms-3.ms-md-0.ms-lg-3.fw-medium(style="transform:translateY(10px)")=config.name
+            br
+            span.fs--2.fw-normal=config.country
           .d-flex.align-items-center
             p.card-text.mb-0.d-inline-block.text-900.me-3=config.star
             svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FEA250' viewBox='0 0 16 16')
@@ -16,7 +15,7 @@ mixin Items(config)
 
 mixin Testimonial
   +Section.py-7
-    .row.justify-content-center
+    .row.flex-center
       .col-md-8.col-lg-5.text-center
         h2 Trusted by Thousands of
           br

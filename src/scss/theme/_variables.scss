@@ -162,7 +162,7 @@ $brand-colors: map-merge(
 //*-----------------------------------------------
 //|   Border
 //-----------------------------------------------*/
-$border-color: $gray-300;
+$border-color: $gray-300 !default;
 $border-width: 1px !default;
 
 // Options

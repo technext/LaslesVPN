@@ -1,14 +1,15 @@
 mixin NavbarLandie
-  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.px-0(data-navbar-on-scroll)
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3(data-navbar-on-scroll)
     .container
       a.navbar-brand(href='#')
-        img.d-inline-block(src=`${CWD}assets/img/icons/logo.png` alt='' width='30' )
-        span.d-inline-block.text-1000.fs-1.ms-2.fw-medium Lasles
+        img(src=`${CWD}assets/img/icons/logo.png` alt='' width='30' )
+        span.text-1000.fs-1.ms-2.fw-medium Lasles
           span.fw-bold VPN
       button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
+    
       #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mx-auto.mb-lg-0.border-top.border-bottom.border-lg-top-0.border-lg-bottom-0
+        ul.navbar-nav.mx-auto.border-bottom.border-lg-bottom-0.pt-2.pt-lg-0
           li.nav-item
             a.nav-link.active(aria-current='page', href='#' class= currentPage === 'index' ? 'active' : false ) About
           li.nav-item
@@ -19,7 +20,7 @@ mixin NavbarLandie
             a.nav-link(href='#') Testimonials
           li.nav-item
             a.nav-link(href='#') Help  
-        form.d-flex
+        form.d-flex.py-3.py-lg-0
           button.btn.btn-link.text-1000.fw-medium.order-1.order-lg-0(type='button') Sign in
           button.btn.btn-outline-danger.rounded-pill.order-0(type='submit') Sign Up
 
