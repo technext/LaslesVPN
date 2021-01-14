@@ -283,15 +283,13 @@ var navbarInit = function navbarInit() {
     var colorName = Object.keys(allColors).includes(name) ? name : 'white';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
-    var shadowName = 'shadow-transition'; // const shadowName = 'shadow';
-
+    var shadowName = 'shadow-transition';
     var colorRgb = utils.hexToRgb(color);
 
     var _window$getComputedSt = window.getComputedStyle(navbar),
         backgroundImage = _window$getComputedSt.backgroundImage;
 
-    var transition = 'background-color 0.35s ease'; // console.log(transition);
-
+    var transition = 'background-color 0.35s ease';
     navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
 
     window.addEventListener(Events.SCROLL, function () {
@@ -308,7 +306,7 @@ var navbarInit = function navbarInit() {
 
       if (window.innerWidth > breakPoint) {
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
-        navbar.style.transition = 'none'; // navbar.classList.add(shadowName);
+        navbar.style.transition = 'none';
       } else if (!utils.hasClass(navbar.querySelector(Selector.NAVBAR_TOGGLER), ClassNames.COLLAPSED)) {
         navbar.classList.add(bgClassName);
         navbar.classList.add(shadowName);
@@ -334,63 +332,10 @@ var navbarInit = function navbarInit() {
       navbar.style.transition = 'none';
     });
   }
-};
-/* -------------------------------------------------------------------------- */
-
-/*                           Navbar vertical config                           */
-
-/* -------------------------------------------------------------------------- */
-
-
-var NAVBAR_VERTICAL_CONFIG = {
-  isNavbarVerticalCollapsed: false
-};
-
-var isNull = function isNull(key) {
-  return JSON.parse(localStorage.getItem(key)) === null;
-};
-
-isNull('isNavbarVerticalCollapsed') && localStorage.setItem('isNavbarVerticalCollapsed', NAVBAR_VERTICAL_CONFIG.isNavbarVerticalCollapsed);
-var isNavbarVerticalCollapsed = JSON.parse(localStorage.getItem('isNavbarVerticalCollapsed'));
-
-if (isNavbarVerticalCollapsed) {
-  document.documentElement.classList.add('navbar-vertical-collapsed');
-}
-/* -------------------------------------------------------------------------- */
-
-/*                             Live Configuration                             */
-
-/* -------------------------------------------------------------------------- */
-
-
-var isFluid = getItemFromStore('isFluid', false);
-var isRTL = getItemFromStore('isRTL', false);
-var navbarPosition = getItemFromStore('navbarPosition', 'vertical');
-var navbarStyle = getItemFromStore('navbarStyle', 'transparent');
-
-var setCheckInputValue = function setCheckInputValue(id, value) {
-  var input = document.getElementById(id);
-  input && (input.checked = value);
-};
-
-setCheckInputValue('mode-fluid', isFluid);
-setCheckInputValue('mode-rtl', isRTL);
-setCheckInputValue("option-navbar-".concat(navbarPosition), true);
-setCheckInputValue("navbar-style-".concat(navbarStyle), true);
-
-if (navbarPosition === 'top') {
-  var buttonGroups = document.querySelector('.btn-group-navbar-style');
-  buttonGroups && buttonGroups.querySelectorAll('.btn-check').forEach(function (input) {
-    input.setAttribute('disabled', true);
-  });
-}
-
-var storage = {
-  isRTL: isRTL,
-  isFluid: isFluid
 }; // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
+
 
 docReady(navbarInit);
 docReady(detectorInit);

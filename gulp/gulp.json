@@ -25,7 +25,6 @@
       "all": "src/pug/**/*.pug",
       "pages": [
         "*.pug",
-        "plugins/**/*.pug",
         "pages/**/*.pug",
         "pages/*.pug"
       ]

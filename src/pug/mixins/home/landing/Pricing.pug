@@ -16,7 +16,7 @@ mixin PriceItem(config, ...items)
           h2.mb-3= config.footerTitle 
             if config.month
               span.text-900= config.month
-          if config.isOutline
+          if config.hasBtnOutline
             button.btn.btn-outline-danger.rounded-pill(type='submit') Sign Up  
           else  
             button.btn.btn-danger.hover-top.btn-glow.rounded-pill.border-0(type='submit') Sign Up
@@ -29,9 +29,9 @@ mixin Pricing
         p Let's choose the package that is best for you and explore it happily and cheerfully.
     .row.h-100.justify-content-center
       
-      - const p1 = {title:'Free Plan', image: 'pricing.png', footerTitle:'Free', isOutline: true}
-      - const p2 = {title:'Standard Plan', image: 'pricing.png', footerTitle: '$9', month:'/mo',isOutline: true }  
-      - const p3 = {title:'Premium Plan', image: 'pricing.png', footerTitle:'$12', month:'/mo',isOutline: false}
+      - const p1 = {title:'Free Plan', image: 'pricing.png', footerTitle:'Free', hasBtnOutline: true}
+      - const p2 = {title:'Standard Plan', image: 'pricing.png', footerTitle: '$9', month:'/mo', hasBtnOutline: true }  
+      - const p3 = {title:'Premium Plan', image: 'pricing.png', footerTitle:'$12', month:'/mo', hasBtnOutline: false}
 
       +PriceItem(p1, 'Unlimited Bandwidth ', 'Encrypted Connection', 'No Traffic Logs','Works on All Devices')
       +PriceItem(p2, 'Unlimited Bandwidth ', 'Encrypted Connection', 'Yes Traffic Logs','Works on All Devices','Connect Anyware')

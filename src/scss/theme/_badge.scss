@@ -2,34 +2,6 @@
 /*                                    Badge                                   */
 /* -------------------------------------------------------------------------- */
 
-// @mixin badge-soft-variant($bg, $color) {
-//   color: $color;
-//   background-color: $bg;
-
-//   &[href] {
-//     @include hover-focus {
-//       text-decoration: none;
-//       color: $color;
-//       background-color: darken($bg, 8%);
-//     }
-//   }
-// }
-
-// @each $color, $value in $theme-colors {
-//   .badge-soft-#{$color} {
-//     @if $color == 'secondary' {
-//       @include badge-soft-variant(color-level($value, -10), color-level($value, -0.8));
-//     } @else if $value == 'warning' {
-//       @include badge-soft-variant(color-level($value, -10), color-level($value, 2.5));
-//     } @else if $value == 'danger' {
-//       @include badge-soft-variant(color-level($value, -10), color-level($value, 4.5));
-//     } @else {
-//       @include badge-soft-variant(color-level($value, -10), color-level($value, 4.5));
-//     }
-//   }
-// }
-
-
 .badge {
   line-height: 0.8125rem;
 }

@@ -44,9 +44,7 @@ gulp.task("script:webpack", () => {
 gulp.task("script", () => {
   /* ------------------------------ Theme script ------------------------------ */
 
-  const sourceStream = gulp.src(
-    isProd ? paths.script.src : paths.script.src
-  );
+  const sourceStream = gulp.src(paths.script.src);
   const jsStream = sourceStream
     .pipe(clone())
     .pipe(sourcemaps.init())

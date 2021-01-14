@@ -116,22 +116,22 @@ $utilities: map_merge(
         top-0: 0,
       ),
     ),
-    "border-right": (
+    "border-end": (
       property: border-right,
       responsive: true,
       class: border,
       values: (
-        right: $border-width solid $border-color,
-        right-0: 0,
+        end: $border-width solid $border-color,
+        end-0: 0,
       ),
     ),
-    "border-left": (
+    "border-start": (
       property: border-left,
       responsive: true,
       class: border,
       values: (
-        left: $border-width solid $border-color,
-        left-0: 0,
+        start: $border-width solid $border-color,
+        start-0: 0,
       ),
     ),
     "border-bottom": (
@@ -182,20 +182,20 @@ $utilities: map_merge(
         dashed-top: $border-width dashed $border-color,
       ),
     ),
-    "border-dashed-right": (
+    "border-dashed-end": (
       responsive: true,
       property: border-right,
       class: border,
       values: (
-        dashed-right: $border-width dashed $border-color,
+        dashed-end: $border-width dashed $border-color,
       ),
     ),
-    "border-dashed-left": (
+    "border-dashed-start": (
       responsive: true,
       property: border-left,
       class: border,
       values: (
-        dashed-left: $border-width dashed $border-color,
+        dashed-start: $border-width dashed $border-color,
       ),
     ),
     "border-dashed-bottom": (
@@ -232,14 +232,14 @@ $utilities: map_merge(
         top-0: 0,
       ),
     ),
-    "rounded-right": (
+    "rounded-end": (
       responsive: true,
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded,
       values: (
-        right: $border-radius,
-        right-lg: $border-radius-lg,
-        right-0: 0,
+        end: $border-radius,
+        end-lg: $border-radius-lg,
+        end-0: 0,
       ),
     ),
     "rounded-bottom": (
@@ -252,14 +252,14 @@ $utilities: map_merge(
         bottom-0: 0,
       ),
     ),
-    "rounded-left": (
+    "rounded-start": (
       responsive: true,
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded,
       values: (
-        left: $border-radius,
-        left-lg: $border-radius-lg,
-        left-0: 0,
+        start: $border-radius,
+        start-lg: $border-radius-lg,
+        start-0: 0,
       ),
     ),
     "rounded-0": (

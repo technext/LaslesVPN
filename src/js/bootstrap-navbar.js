@@ -39,12 +39,9 @@ const navbarInit = () =>{
     const color = allColors[colorName];
     const bgClassName = `bg-${colorName}`;
     const shadowName = 'shadow-transition'
-    // const shadowName = 'shadow';
     const colorRgb = utils.hexToRgb(color);
     const { backgroundImage } = window.getComputedStyle(navbar);
     const transition = 'background-color 0.35s ease';
-   
-    // console.log(transition);
     navbar.style.backgroundImage = 'none';
 
      // Change navbar background color on scroll
@@ -63,7 +60,6 @@ const navbarInit = () =>{
       if (window.innerWidth > breakPoint) {
         navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
         navbar.style.transition = 'none';
-        // navbar.classList.add(shadowName);
       } 
       else if (
         !utils.hasClass(
@@ -103,7 +99,6 @@ const navbarInit = () =>{
     });
 
   }
-
 
 };
 
